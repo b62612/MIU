@@ -9,22 +9,81 @@ ul#otis {
  }	
 #agegrades{  margin-left:-20px; width: 150px; }
 
+h3{color: yellow;}
 h2{background-color:#171254;color: #ffffff; outline-style: solid; 
 outline-width:thin; padding: 0px; margin-top: 30px;margin-bottom: 0px;}
 fieldset{background-color: #9AA2F5;}	
 
-h4{padding:0px; margin:2px;}
+#title{text-align: left;color: #ffffff; margin-left:1%;}
 
-#cta{text-align: right;}
+#cta{color: #ffffff;text-align: right;}
 
-header{text-align: right;}
+#ctalink{color: #ffffff; margin-right:3px; margin-top: 2px;}
+
+header{text-align: right;
+}
+
+.cattabs{padding-top:10%;
+position: relative;
+width: 100%
+}
+
+h5{
+position: absolute;
+top: 12px;
+left: 0;
+width: 100%;
+}
+
+
+#errorpgone{position: absolute;
+margin-left:1%;
+text-align: left;
+top: 23px;
+left: 0;
+width: 100%;}
+
+#errorpgtwo{position: absolute;
+margin-left:1%;
+text-align: left;
+top: 50px;
+left: 0;
+width: 100%;}
+
+#errorpgthree{position: absolute;
+margin-left:1%;
+text-align: left;
+top: 75px;
+left: 0;
+width: 100%;}
+
+#errorpgfour{position: absolute;
+margin-left:1%;
+text-align: left;
+top: 103px;
+left: 0;
+width: 100%;}
+
+#errorpgfive{position: absolute;
+margin-left:1%;
+text-align: left;
+top: 128px;
+left: 0;
+width: 100%;}
+
+
+
+
 
 form{background-color: #E3E5FA;
 text-transform: capitalize;
 height:380px;
 }
+h4{padding:0px; margin:0px;
 
-
+color: #000000;
+}
+#searchbox{width: 80%; margin-right: 1%;}
 label{
 	
 	width: auto;
@@ -49,13 +108,9 @@ li{margin-left: 1px;}
 
 body {
     font-family: "Lucida Grande", "Arial", sans-serif;
-    margin: 0.5;
-    padding: 0.1 0.1 0.4 0.1;
-    
-    
-    max-width: 25em;
-    border: 0.45em solid #3E4B73;
-    line-height: 1.5em;}
+   margin:0;
+    padding:0;
+    height:100%;}
     
 
    

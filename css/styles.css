@@ -14,7 +14,7 @@ h2{background-color:#171254;color: #ffffff; outline-style: solid;
 outline-width:thin; padding: 0px; margin-top: 30px;margin-bottom: 0px;}
 fieldset{background-color: #9AA2F5;}	
 
-#title{text-align: left;color: #ffffff; margin-left:1%;}
+
 
 #cta{color: #ffffff;text-align: right;}
 
@@ -35,39 +35,46 @@ left: 0;
 width: 100%;
 }
 
+#title{position: absolute;
+margin-left:1%;
+text-align: left;
+top: 16px;
+left: 0;
+width: 100%;
+color: #ffffff; }
 
 #errorpgone{position: absolute;
 margin-left:1%;
 text-align: left;
-top: 23px;
+top: 56px;
 left: 0;
 width: 100%;}
 
 #errorpgtwo{position: absolute;
 margin-left:1%;
 text-align: left;
-top: 50px;
+top: 82px;
 left: 0;
 width: 100%;}
 
 #errorpgthree{position: absolute;
 margin-left:1%;
 text-align: left;
-top: 75px;
+top: 108px;
 left: 0;
 width: 100%;}
 
 #errorpgfour{position: absolute;
 margin-left:1%;
 text-align: left;
-top: 103px;
+top: 134px;
 left: 0;
 width: 100%;}
 
 #errorpgfive{position: absolute;
 margin-left:1%;
 text-align: left;
-top: 128px;
+top: 160px;
 left: 0;
 width: 100%;}
 

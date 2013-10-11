@@ -1,0 +1,629 @@
+<!-- 
+Ejiroghene B. Efevberha
+Deliverable 2
+Talent Scout App
+MIU 1310
+-->
+
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Mobile Site Template</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+<!-- home page jquery -->
+	<div data-role="page" id="home">
+		
+		<header data-role="header" data-position="fixed">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"></div>
+				<div class="ui-block-b"><br>Goladore</div>
+				<div class="ui-block-c"><a href="file:add_item.html" data-role="button"  data-theme="b">Add Player</a></div>
+			</div>
+		</header>
+		<div data-theme="b">
+			<img src="goladore_03.png" />
+		</div>
+		<div data-role="content">
+			 <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Enter Search Here">
+		 		<li data-role="list-divider">Browse Players By:</li>
+		 			<li><a href="#lastname">Last Name</a>
+		 				 <ul data-role="listview" data-inset="true" data-filter="true" 
+		 				 data-filter-placeholder="Enter Search Here">
+		 						<li data-role="list-divider">Players by Last Name
+		 							<p class="ui-li-aside"> Contract Expires</p>
+		 						</li>
+		 						<li data-icon="grid"><a href="#lnadejo"><h3>Adejo</h3>
+		 							<p style="font-weight:bold">Current Club:</p>
+		 							<p style="font-size:8"> Hertha Berlin</p>
+		 							<p class="ui-li-aside"> 10/10/2017</p></a>
+		 						</li>
+		 						<li data-icon="grid"><a href="#lnameobi"><h3>Ameobi</h3>
+		 							<p style="font-weight:bold">Current Club:</p>
+		 							<p style="font-size:8"> Newcastle FC</p>
+		 							<p class="ui-li-aside"> 01/27/2015</p></a>
+		 						</li>
+		 						<li data-icon="grid"><a href="#lnmusa"><h3>Musa</h3>
+		 							<p style="font-weight:bold">Current Club:</p>
+		 							<p style="font-size:8"> Hull City</p>
+		 							<p class="ui-li-aside"> 12/11/2013</p></a>
+		 						</li>
+		 						<li data-icon="grid"><a href="#lnobi"><h3>Obi</h3>
+		 							<p style="font-weight:bold">Current Club:</p>
+		 							<p style="font-size:8"> Chelsea FC</p>
+		 							<p class="ui-li-aside"> 05/10/2015</p></a>
+		 						</li>
+		 						<li data-icon="grid"><a href="#lnutaka"><h3>Utaka</h3>
+		 							<p style="font-weight:bold">Current Club:</p>
+		 							<p style="font-size:8"> Anzhi</p>
+		 							<p class="ui-li-aside"> 09/18/2016</p></a>
+		 						</li>
+		 						<li>
+		 						<footer data-role="footer" data-position="fixed" data-id="home">
+		 							<nav data-role="navbar">
+		 								<ul>
+											<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+											<li><a href="#info" data-icon="info">Info</a></li>
+											<li><a href="#stream" data-icon="gear">News Stream</a></li>
+										</ul>
+									</nav>
+								</footer>
+								</li>
+			 </ul>
+			 
+					<ul>
+						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+						<li><a href="#info" data-icon="info">Info</a></li>
+						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+					</ul>
+		 		</li>
+		 		<li><a href="#firstname">First Name</a></li>
+		 		<li><a href="#agedivi">Age Grade</a></li>
+		 		<li><a href="#fieldpos">Field Position</a></li>
+		 		<li><a href="#performance">Rating</a></li>
+			 </ul>
+		 	
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+		 	<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+						<li><a href="#info" data-icon="info" >Info</a></li>
+						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+					</ul>
+			</div>
+		</div>
+
+	</div>
+<!-- lastname 1stLevelPg jquery 
+	<div data-role="page" id="lastname">
+		
+		<header data-role="header" data-position="fixed">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"></div>
+				<div class="ui-block-b"><br>Goladore</div>
+				<div class="ui-block-c"><a href="file:add_item.html" data-role="button"  data-theme="b">Add Player</a></div>
+			</div>
+		</header>
+		<div data-theme="b">
+			<img src="goladore_03.png" />
+		</div>
+		
+		<content data-role="content">
+			 <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Enter Search Here">
+		 		<li data-role="list-divider">Players by Last Name
+		 			<p class="ui-li-aside"> Contract Expires</p>
+		 		</li>
+		 			<li data-icon="grid"><a href="#lnadejo"><h3>Adejo</h3>
+		 				<p style="font-weight:bold">Current Club:</p>
+		 				<p style="font-size:8"> Hertha Berlin</p>
+		 				<p class="ui-li-aside"> 10/10/2017</p></a>
+		 			</li>
+		 			<li data-icon="grid"><a href="#lnameobi"><h3>Ameobi</h3>
+		 				<p style="font-weight:bold">Current Club:</p>
+		 				<p style="font-size:8"> Newcastle FC</p>
+		 				<p class="ui-li-aside"> 01/27/2015</p></a>
+		 			</li>
+		 			<li data-icon="grid"><a href="#lnmusa"><h3>Musa</h3>
+		 				<p style="font-weight:bold">Current Club:</p>
+		 				<p style="font-size:8"> Hull City</p>
+		 				<p class="ui-li-aside"> 12/11/2013</p></a>
+		 			</li>
+		 			<li data-icon="grid"><a href="#lnobi"><h3>Obi</h3>
+		 				<p style="font-weight:bold">Current Club:</p>
+		 				<p style="font-size:8"> Chelsea FC</p>
+		 				<p class="ui-li-aside"> 05/10/2015</p></a>
+		 			</li>
+		 			<li data-icon="grid"><a href="#lnutaka"><h3>Utaka</h3>
+		 				<p style="font-weight:bold">Current Club:</p>
+		 				<p style="font-size:8"> Anzhi</p>
+		 				<p class="ui-li-aside"> 09/18/2016</p></a>
+		 			</li>	
+			 </ul>
+		 	
+		</content> 
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+		 	<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+						<li><a href="#info" data-icon="info">info</a></li>
+						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+					</ul>
+			</div>
+		</div>
+
+	</div> -->
+<!-- firstname 1stLevelPg jquery -->
+	<div data-role="page" id="firstname">
+		
+		<header data-role="header" data-position="fixed">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"></div>
+				<div class="ui-block-b"><br>Goladore</div>
+				<div class="ui-block-c"><a href="file:add_item.html" data-role="button"  data-theme="b">Add Player</a></div>
+			</div>
+		</header>
+		<div data-theme="b">
+			<img src="goladore_03.png" />
+		</div>
+		<div data-role="content">
+			 <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Enter Search Here">
+		 		<li data-role="list-divider">Players by First Name</li>
+		 		<li data-icon="back"><a href="#home">Ahmed</a></li>
+		 		<li data-icon="back"><a href="#home">John</a></li>
+		 		<li data-icon="back"><a href="#home">Mark</a></li>
+		 		<li data-icon="back"><a href="#home">Mikel</a></li>
+		 		<li data-icon="back"><a href="#home">Shola</a></li>
+			 </ul>
+		 	
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+		 	<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+						<li><a href="#info" data-icon="info">info</a></li>
+						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+					</ul>
+			</div>
+		</div>
+
+	</div>
+<!-- age grade 1stLevelPg jquery -->
+<div data-role="page" id="agedivi">
+		
+		<header data-role="header" data-position="fixed">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"></div>
+				<div class="ui-block-b"><br>Goladore</div>
+				<div class="ui-block-c"><a href="file:add_item.html" data-role="button"  data-theme="b">Add Player</a></div>
+			</div>
+		</header>
+		<div data-theme="b">
+			<img src="goladore_03.png" />
+		</div>
+	
+	<!--Thumbnails and text -->	
+	
+		<div data-role="content">
+			 <ul data-role="listview" data data-inset="true" data-filter="true" 
+				 data-filter-placeholder="Enter Search Here">
+		 		
+		 		<li>
+		 				<a href="#home"><img src="images/u_117.png" alt=""/> 
+		 					<h2> Under-17</h2>
+		 					<p> Players under the age category of 17</p></a>
+
+		 			
+		 		</li>
+		 		
+		 		<li>
+		 				<a href="#home"><img src="images/u_223.png" alt=""/> 
+		 					<h2> Under-23</h2>
+		 					<p> Olympic age category</p></a>
+
+		 			
+		 		</li>
+		 		
+		 		<li>
+		 				<a href="#home"><img src="images/over_223.png" alt=""/> 
+		 					<h2> Over-23</h2>
+		 					<p> No Age limit</p></a>
+
+		 			
+		 		</li>
+		 		
+		 		<!--<li>
+		 					<img src="images/u_223.png" alt=""/> 
+		 					<h2> Under-23</h2>
+		 					<p> Olympics age category</p>
+		 			
+		 				<li </li>
+		 			
+		 			
+		 		</li>
+		 		
+		 	<li>
+		 					<img src="images/over_223.png" alt=""/> 
+		 					<h2> Over-23</h2>
+		 					<p> Age limitless</p>
+		 			<ul>
+		 				<li data-icon="back"><a href="#home">Back</a></li>
+		 			</ul>
+		 			
+		 		</li> -->
+		 	</ul>
+		 	<!--	<li data-icon="back"><a href="#home">Under-23</a></li>
+		 		<li data-icon="back"><a href="#home">Over-23</a></li>
+		 		
+			 </ul> -->
+		 	
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+		 	<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+						<li><a href="#info" data-icon="info">info</a></li>
+						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+					</ul>
+			</div>
+		</div>
+
+	</div>
+	<!-- field position 1stLevelPg jquery -->
+	<div data-role="page" id="fieldpos">
+		
+		<header data-role="header" data-position="fixed">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"></div>
+				<div class="ui-block-b"><br>Goladore</div>
+				<div class="ui-block-c"><a href="file:add_item.html" data-role="button"  data-theme="b">Add Player</a></div>
+			</div>
+		</header>
+		<div data-theme="b">
+			<img src="goladore_03.png" />
+		</div>
+		<div data-role="content">
+			 <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Enter Search Here">
+		 		<li data-role="list-divider">Players by Field Position</li>
+		 		<li data-icon="back"><a href="#home">Forward</a></li>
+		 		<li data-icon="back"><a href="#home">Midfield</a></li>
+		 		<li data-icon="back"><a href="#home">Defense</a></li>
+		 		
+			 </ul>
+		 	
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+		 	<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+						<li><a href="#info" data-icon="info">info</a></li>
+						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+					</ul>
+			</div>
+		</div>
+
+	</div>
+	<!-- rating 1stLevelPg jquery -->
+	<div data-role="page" id="performance">
+		
+		<header data-role="header" data-position="fixed">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"></div>
+				<div class="ui-block-b"><br>Goladore</div>
+				<div class="ui-block-c"><a href="file:add_item.html" data-role="button"  data-theme="b">Add Player</a></div>
+			</div>
+		</header>
+		<div data-theme="b">
+			<img src="goladore_03.png" />
+		</div>
+		<div data-role="content">
+			 <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Enter Search Here">
+		 		<li data-role="list-divider">Players by Rating</li>
+		 		<li data-icon="back"><a href="#home">0-3</a></li>
+		 		<li data-icon="back"><a href="#home">4-7</a></li>
+		 		<li data-icon="back"><a href="#home">8-10</a></li>
+		 		
+			 </ul>
+		 	
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+		 	<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+						<li><a href="#info" data-icon="info">info</a></li>
+						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+					</ul>
+			</div>
+		</div>
+
+	</div>
+	<!-- 2nd Level Pages -->
+	
+	<!-- Adejo club history emblems jquery -->
+	<div data-role="page" id="lnadejo">
+		
+		<header data-role="header" data-position="fixed">
+			<h3>Club History (Adejo)</h3>
+		</header>
+		
+			<figure class="ui-grid-a">
+					<div class="ui-block-a"><img src="images/clubpics/adejo/ajaxx.png" /></div>
+					<div class="ui-block-b"><br><img src="images/clubpics/adejo/Anderlechtt.png" /></div>
+					<div class="ui-block-a"><img src="images/clubpics/adejo/anzhii.png" /></div>
+					<div class="ui-block-b"><img src="images/clubpics/adejo/slovann.png" /></div>	
+					<div class="ui-block-a"><img src="images/clubpics/adejo/stockholmm.png" /></div> 
+					<div class="ui-block-b"><img src="images/clubpics/adejo/zenitt.png" /></div>  
+			</figure>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+		 	<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+						<li><a href="#info" data-icon="info">info</a></li>
+						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+					</ul>
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- Ameobi club history emblems jquery -->
+	<div data-role="page" id="lnameobi">
+		
+		<header data-role="header" data-position="fixed">
+			<h3>Club History (Ameobi)</h3>
+		</header>
+		
+			<figure class="ui-grid-a">
+					<div class="ui-block-a"><br><img src="images/clubpics/ameobi/batee.png" /></div>
+					<div class="ui-block-b"><br><img src="images/clubpics/ameobi/olympiakoss.png" /></div>
+					<div class="ui-block-a"><img src="images/clubpics/ameobi/compenhagenn.png" /></div>
+					<div class="ui-block-b"><img src="images/clubpics/ameobi/wienn.png" /></div>	
+					<div class="ui-block-a"><img src="images/clubpics/ameobi/youngboyzz.png" /></div> 
+					<div class="ui-block-b"><img src="images/clubpics/ameobi/ajaxx.png" /></div>  
+			</figure>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+		 	<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+						<li><a href="#info" data-icon="info">info</a></li>
+						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+					</ul>
+			</div>
+		</div>
+
+	</div>
+	
+		<!-- Musa club history emblems jquery -->
+	<div data-role="page" id="lnmusa">
+		
+		<header data-role="header" data-position="fixed">
+			<h3>Club History (Musa)</h3>
+		</header>
+		
+			<figure class="ui-grid-a">
+					<div class="ui-block-a"><br><img src="images/clubpics/musa/celticc.png" /></div>
+					<div class="ui-block-b"><br><img src="images/clubpics/adejo/stockholmm.png" /></div>
+					<div class="ui-block-a"><img src="images/clubpics/ameobi/compenhagenn.png" /></div>
+					<div class="ui-block-b"><img src="images/clubpics/ameobi/wienn.png" /></div>	
+					<div class="ui-block-a"><img src="images/clubpics/ameobi/youngboyzz.png" /></div> 
+					<div class="ui-block-b"><img src="images/clubpics/adejo/zenitt.png" /></div>  
+			</figure>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+		 	<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+						<li><a href="#info" data-icon="info">info</a></li>
+						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+					</ul>
+			</div>
+		</div>
+
+	</div>
+	
+		<!-- Obi club history emblems jquery -->
+	<div data-role="page" id="lnobi">
+		
+		<header data-role="header" data-position="fixed">
+			<h3>Club History (Obi)</h3>
+		</header>
+			<figure class="ui-grid-a">
+					<div class="ui-block-a"><br><img src="images/clubpics/ameobi/youngboyzz.png" /></div>
+					<div class="ui-block-b"><br><img src="images/clubpics/ameobi/wienn.png" /></div>
+					<div class="ui-block-a"><img src="images/clubpics/ameobi/compenhagenn.png" /></div>
+					<div class="ui-block-b"><img src="images/clubpics/adejo/zenitt.png" /></div>	
+					<div class="ui-block-a"><img src="images/clubpics/adejo/stockholmm.png" /></div> 
+					<div class="ui-block-b"><img src="images/clubpics/musa/celticc.png" /></div>  
+			</figure>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+		 	<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+						<li><a href="#info" data-icon="info">info</a></li>
+						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+					</ul>
+			</div>
+		</div>
+
+	</div>
+	
+		<!-- Utaka club history emblems jquery -->
+	<div data-role="page" id="lnutaka">
+		
+		<header data-role="header" data-position="fixed">
+			<h3>Club History (Utaka)</h3>
+		</header>
+		
+			<figure class="ui-grid-a">
+					<div class="ui-block-a"><br><img src="images/clubpics/adejo/zenitt.png" /></div>
+					<div class="ui-block-b"><br><img src="images/clubpics/ameobi/compenhagenn.png" /></div>
+					<div class="ui-block-a"><img src="images/clubpics/ameobi/olympiakoss.png" /></div>
+					<div class="ui-block-b"><img src="images/clubpics/ameobi/wienn.png" /></div>	
+					<div class="ui-block-a"><img src="images/clubpics/musa/celticc.png" /></div> 
+					<div class="ui-block-b"><img src="images/clubpics/adejo/stockholmm.png" /></div>  
+			</figure>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+		 	<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+						<li><a href="#info" data-icon="info">info</a></li>
+						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+					</ul>
+			</div>
+		</div>
+
+	</div>
+	
+	
+	<!-- info Section -->
+	<div data-role="page" id="info">
+		
+		<header data-role="header" data-position="fixed">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"></div>
+				<div class="ui-block-b"><br>Information</div>
+				<div class="ui-block-c"><a href="file:add_item.html" data-role="button"  data-theme="b">Add Player</a></div>
+			</div>
+		</header>
+		<div data-theme="b">
+			<img src="goladore_03.png" />
+		</div>
+		<div data-role="content">
+			 <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Enter Search Here">
+		 		<li data-role="list-divider">Information Categories:</li>
+		 			<li><a href="#credits">Credits</a>
+		 				 <ul data-role="listview" data-inset="true" data-filter="true" 
+		 				 data-filter-placeholder="Enter Search Here">
+		 						<li data-role="list-divider">Logos used
+		 							
+		 						</li>
+		 						<li data-icon="grid"><a href="#lnadejo"><h3>Chris Creamer</h3>
+		 							<p style="font-weight:bold">Logo owner</p>
+		 							sportslogos.net
+		 							<p class="ui-li-aside"> Est.1997 </p></a>
+		 						</li>
+		 						
+		 						<li>
+		 						<footer data-role="footer" data-position="fixed" data-id="home">
+		 							<nav data-role="navbar">
+		 								<ul>
+											<li><a href="#home" data-icon="home" >Home</a></li>
+											<li><a href="#info" data-icon="info" class="ui-btn-active">Info</a></li>
+											<li><a href="#stream" data-icon="gear">News Stream</a></li>
+										</ul>
+									</nav>
+								</footer>
+								</li>
+			 </ul>
+			 
+					<ul>
+						<li><a href="#home" data-icon="home" >Home</a></li>
+						<li><a href="#info" data-icon="info" class="ui-btn-active">Info</a></li>
+						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+					</ul>
+		 		</li>
+		 		<li><a href="#about">About Me</a>
+		 		
+		 		<ul data-role="listview" data-inset="true" data-filter="true" 
+		 				 data-filter-placeholder="Enter Search Here">
+		 						<li data-role="list-divider">Profile
+		 							
+		 						</li>
+		 						<li data-icon="grid"><a href="#lnadejo"><h3>Name: Ejay</h3>
+		 							<p style="font-weight:bold">Hobby: Music Production</p>
+		 							Full Name: Ejiroghene B. Efevberha 
+		 							<p class="ui-li-aside"> MBDS BSc. </p></a>
+		 						</li>
+		 						
+		 						<li>
+		 						<footer data-role="footer" data-position="fixed" data-id="home">
+		 							<nav data-role="navbar">
+		 								<ul>
+											<li><a href="#home" data-icon="home" >Home</a></li>
+											<li><a href="#info" data-icon="info" class="ui-btn-active">Info</a></li>
+											<li><a href="#stream" data-icon="gear">News Stream</a></li>
+										</ul>
+									</nav>
+								</footer>
+								</li>
+			 </ul>
+			 
+					<ul>
+						<li><a href="#home" data-icon="home" >Home</a></li>
+						<li><a href="#info" data-icon="info" class="ui-btn-active">Info</a></li>
+						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+					</ul>
+		 		
+		 		
+		 				
+		 					
+
+		 			
+		 		
+		 		
+		 		
+		 		</li>
+		 				<li><a href="index.html"> Bronze App</a></li>
+						<li><a href="index.html">Gold App</a></li>
+						<li><a href="https://github.com/b62612/MIU/tree/gh-pages" >Gold gh-pages</a></li>
+						<li><a href="https://github.com/b62612/MIU/tree/gh-pages" >Bronze gh-pages</a></li>
+					</ul>
+		 		</li>
+		 		
+		 		<!--
+		 		<li><a href="#fieldpos">Field Position</a></li>
+		 		<li><a href="#performance">Rating</a></li>
+			 </ul> -->
+		 	
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+		 	<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" >Home</a></li>
+						<li><a href="#info" data-icon="info" class="ui-btn-active">Info</a></li>
+						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+					</ul>
+			</div>
+		</div>
+
+	</div>
+	
+	
+	<!-- JavaScript under here -->
+	
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

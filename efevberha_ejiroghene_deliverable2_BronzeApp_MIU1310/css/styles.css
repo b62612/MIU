@@ -1,0 +1,133 @@
+/*  Ejiroghene Efevberha
+ 	VFW 1309
+ 	Web App Part 4 (Project 4)
+	Talent Scout Assistant App */
+	
+#button{float: right;}
+
+ul#otis {
+ list-style-type: none;
+ }	
+#agegrades{  margin-left:-20px; width: 150px; }
+
+h3{color: yellow;}
+h2{background-color:#171254;color: #ffffff; outline-style: solid; 
+outline-width:thin; padding: 0px; margin-top: 30px;margin-bottom: 0px;}
+fieldset{background-color: #9AA2F5;}	
+
+
+
+#cta{color: #ffffff;text-align: right;}
+
+#ctalink{color: #ffffff; margin-right:3px; margin-top: 2px;}
+
+header{text-align: right;
+}
+
+.cattabs{padding-top:10%;
+position: relative;
+width: 100%
+}
+
+h5{
+position: absolute;
+top: 12px;
+left: 0;
+width: 100%;
+}
+
+#title{position: absolute;
+margin-left:1%;
+text-align: left;
+top: 16px;
+left: 0;
+width: 100%;
+color: #ffffff; }
+
+#errorpgone{position: absolute;
+margin-left:1%;
+text-align: left;
+top: 56px;
+left: 0;
+width: 100%;}
+
+#errorpgtwo{position: absolute;
+margin-left:1%;
+text-align: left;
+top: 82px;
+left: 0;
+width: 100%;}
+
+#errorpgthree{position: absolute;
+margin-left:1%;
+text-align: left;
+top: 108px;
+left: 0;
+width: 100%;}
+
+#errorpgfour{position: absolute;
+margin-left:1%;
+text-align: left;
+top: 134px;
+left: 0;
+width: 100%;}
+
+#errorpgfive{position: absolute;
+margin-left:1%;
+text-align: left;
+top: 160px;
+left: 0;
+width: 100%;}
+
+
+
+
+
+form{background-color: #E3E5FA;
+text-transform: capitalize;
+height:380px;
+}
+h4{padding:0px; margin:0px;
+
+color: #000000;
+}
+#searchbox{width: 80%; margin-right: 1%;}
+label{
+	
+	width: auto;
+	margin: 1px 1ex 0 0;
+	margin-left: -30px;
+}
+legend{font-weight: bold;
+padding-bottom:10px;
+}
+
+input{position:10px;
+}
+p{font-style: italic;
+	font-variant: small-caps;
+	}
+
+
+ul{color: #000000;}
+li{margin-left: 1px;}
+
+
+
+body {
+    font-family: "Lucida Grande", "Arial", sans-serif;
+   margin:0;
+    padding:0;
+    height:100%;}
+    
+
+   
+input[type=text] { float: right; width: 200px; margin-right:4px; }
+input[type=email] { float: right; width: 200px;margin-right:4px; }
+input[type=tel] { float: right; width: 200px;margin-right:4px; }
+input[type=textarea] { float: right; min-width: 200px; min-height:20px; margin-right:4px; }
+input[type=date] { min-width: 150px;margin-right:4px; }
+input[type=radio] { float: right; margin-right:230px; }
+input[type=range] { float: right; width: 200px;margin-right:4px; }
+input[type=checkbox] { float: right; margin-right:230px; }
+

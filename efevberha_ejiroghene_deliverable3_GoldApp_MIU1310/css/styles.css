@@ -143,3 +143,6 @@ input[type=radio] { float: right; margin-right:230px; }
 input[type=range] { float: right; width: 200px;margin-right:4px; }
 input[type=checkbox] { float: right; margin-right:230px; }
 
+<!-- jquery styling -->
+#hints{font-size: 1px;}
+

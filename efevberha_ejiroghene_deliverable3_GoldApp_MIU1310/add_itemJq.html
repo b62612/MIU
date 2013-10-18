@@ -1,0 +1,142 @@
+<!-- 
+Ejiroghene B. Efevberha
+Deliverable 3
+Talent Scout App
+MIU 1310
+-->
+
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Mobile Site Template</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	<link rel="stylesheet" href="css/styless.css" />
+		
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+<!-- home page jquery -->
+	<div data-role="page" id="addplayerhome" data-add-back-btn="true">
+		<header data-role="header" data-position="fixed" data-theme="b">
+							<h1>Add Player</h1>
+							
+		</header>
+		<div data-role="content"> 
+			<form action="" method="post" id="addplayerform" >
+				<section data-role="fieldcontain" >
+				    <span class="form-error"></span>
+					<div  class="superlegend">Contact Info:</div>
+						<label for="firstname">First Name &#42;Required</label>
+						<input type="text" name="firstname" id="firstname" placeholder=" Enter first name or &#34;nickname&#34;" class="required"/>
+						<p class="hints">Nickname in quotes (e.g "Pele")</p>
+				
+						<label for="lastname">Last Name</label>
+						<input type="text" name="lastname" id="lastname" placeholder="Enter lastname"/>
+						<p class="hints"> Omit last name ONLY if nickname was entered on previous field</p>
+				
+				
+						<label for="email">Agent Email</label>
+						<input type="email" name="email" id="email" placeholder="Enter email"/>
+						<p class="hints"> e.g username@domain.com (format may vary)</p>
+				
+						<label for="phone">Agent Phone</label>
+						<input type="tel" name="phone" id="phone" placeholder="000-000-0000"/>
+						<p class="hints"> Please enter phone number in correct format as shown above</p>
+				</section>
+				<section data-role="fieldcontain" data-native-menu="false">
+						<label for="agegrade" id="speclegend">Age Category</label>
+						    <select name="agegrade" id="agegrade" data-native-menu="false" >
+								<option value="noageselect">-- Choose Age Category -- </option>
+								<option value="underseventeen">U-17</option>
+								<option value="undertwentythree">U-23</option>
+								<option value="overtwentythree">O-23</option>
+							</select>
+				</section>
+				<section data-role="fieldcontain" >
+					<fieldset data-role="controlgroup">
+						<legend>Field Position</legend>
+						
+								<input type="radio" value="attacker" name="position" id="forward"/>
+								<label for="forward">Forward</label>
+								<input type="radio" value="midfielder" name="position" id="midfield"/>
+								<label for="midfield">Midfield</label>
+								<input type="radio" value="defender" name="position" id="defense"/>
+								<label for="defense">Defense</label>
+					</fieldset>
+					<fieldset data-role="controlgroup">
+						<legend>Priority</legend>
+								<input type="checkbox" value="urgency" name="urgent" id="urgent"/>
+								<label for="urgent">Urgent</label>
+								<p class="hints"> Click to check</p>
+
+					</fieldset>
+				</section>
+				<section data-role="fieldcontain">
+					<label for"rating">Rating</label>
+					<input type="range" name="rating" id="rating" value="5" min="0" max="10"/>
+				</section>
+				<section data-role="fieldcontain">
+					<label for"date">Discovery Date</label>
+					<input type="date" name="date" id="date"  class="datepicker" placeholder="MM/DD/YYYY"/>
+
+					
+					
+				</section>
+				
+				<section data-role="fieldcontain">
+					<label for"notes">Notes:</label>
+					<textarea class="required"></textarea>
+					<p class="hints">Enter additional info here</p>
+
+				</section>
+				<section data-role="fieldcontain">
+					<div data-inline="true">
+						
+						<input type="submit" value="Submit" data-theme="b"/>
+					</div>
+					<div>
+					<br>
+						<input type="reset" value="Reset" data-theme="c"/>
+					</div>
+				</section>
+				
+				
+						
+				
+						
+			
+			</form>
+		
+		</div>
+		
+	</div>
+	
+	<!-- JavaScript under here -->
+		<!-- links for Jquery datepicker -->
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
+   
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

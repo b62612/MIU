@@ -1,4 +1,4 @@
-$('#home').on('pageinit', function(){
+$('index').on('pageinit', function(){
 	//code needed for home page goes here
 	
 });	

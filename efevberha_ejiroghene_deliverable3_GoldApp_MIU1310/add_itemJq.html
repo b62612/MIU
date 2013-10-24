@@ -22,8 +22,8 @@ MIU 1310
 	<meta http-equiv="cleartype" content="on">
 	
 	<!-- StyleSheets under here -->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
-	<link rel="stylesheet" href="css/styless.css" />
+	<link rel="stylesheet" href="css/greener.css" />
+	<link rel="stylesheet" href="css/structure.css" />
 		
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
@@ -45,9 +45,9 @@ MIU 1310
 						<input type="text" name="firstname" id="firstname" placeholder=" Enter first name or &#34;nickname&#34;" class="required"/>
 						<p class="hints">Nickname in quotes (e.g "Pele")</p>
 				
-						<label for="lastname">Last Name</label>
-						<input type="text" name="lastname" id="lastname" placeholder="Enter lastname"/>
-						<p class="hints"> Omit last name ONLY if nickname was entered on previous field</p>
+						<label for="lastname">Last Name &#42;Required</label>
+						<input type="text" name="lastname" id="lastname" placeholder="Enter lastname" class="required"/>
+						<p class="hints"> You may re-enter nickname when used in the first-name field</p>
 				
 				
 						<label for="email">Agent Email</label>
@@ -103,7 +103,7 @@ MIU 1310
 				
 				<section data-role="fieldcontain">
 					<label for"notes">Notes:</label>
-					<textarea class="required"></textarea>
+					<textarea ></textarea>
 					<p class="hints">Enter additional info here</p>
 
 				</section>

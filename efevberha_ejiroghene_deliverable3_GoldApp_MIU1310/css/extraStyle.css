@@ -1,0 +1,16 @@
+/*  My custom icons */
+
+.ui-icon-mycustom_home {
+	background-image: url("../images/images/eighteen/home_10.png");
+	width: 18px;
+    height:18px;
+}
+
+ .ui-icon-mycustom_info {
+	background-image: url("../images/images/eighteen/info_03.png");
+	width: 18px;
+    height:18px;
+}
+
+
+

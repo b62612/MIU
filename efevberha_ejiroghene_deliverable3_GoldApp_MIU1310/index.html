@@ -22,35 +22,43 @@ MIU 1310
 	<meta http-equiv="cleartype" content="on">
 	
 	<!-- StyleSheets under here -->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
-	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/greener.css" />
+	<link rel="stylesheet" href="css/structure.css" />
+	
+	
+	
+	
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
 
 </head>
+
+
+
 <body>
 <!-- home page jquery -->
-	<div data-role="page" id="home">
+	<div data-role="page" id="home" data-theme="a">
 		
-		<header data-role="header" data-position="fixed" data-id="dhome">
+		<header data-role="header" data-position="fixed" data-id="dhome" >
 			<div class="ui-grid-b">
-				<div class="ui-block-a"></div>
-				<div class="ui-block-b"><br>Goladore</div>
-				<div class="ui-block-c"><a href="file:add_itemJq.html" data-role="button"  data-theme="b">Add Player</a></div>
+				
+				<div class="ui-block-a"><img src="images/images/goladorelogo_28.png" /></div>
+				<div class="ui-block-b" ></div>
+				<div class="ui-block-c"><a href="file:add_itemJq.html" data-role="button"  data-theme="a">Add Player</a></div>
 			</div>
 		</header>
-		<div data-theme="b">
-			<img src="goladore_03.png" />
+		<div >
+			<img src="goladore_05.png" />
 		</div>
 		<div data-role="content">
 			 <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Enter Search Here">
 		 		<li data-role="list-divider">Browse Players By:</li>
-		 		<li><a href="#lastname">Last Name</a></li>
-		 		<li><a href="#firstname">First Name</a></li>
-		 		<li><a href="#agedivi">Age Grade</a></li>
-		 		<li><a href="#fieldpos">Field Position</a></li>
-		 		<li><a href="#performance">Rating</a></li>
+		 		<li><a href="#lastname" data-icon="forward" >Last Name</a></li>
+		 		<li><a href="#firstname" data-icon="forward" >First Name</a></li>
+		 		<li><a href="#agedivi" data-icon="forward" >Age Grade</a></li>
+		 		<li><a href="#fieldpos" data-icon="forward" >Field Position</a></li>
+		 		<li><a href="#performance" data-icon="forward" >Rating</a></li>
 			 </ul>
 		 	
 		</div>
@@ -60,16 +68,16 @@ MIU 1310
 					<ul>
 						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
 						<li><a href="#info" data-icon="info" >Info</a></li>
-						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+						<li><a href="#stream" data-icon="gear" >News Stream</a></li>
 					</ul>
 			</div>
 		</footer>
 
 	</div>
 <!-- lastname 1stLevelPg jquery  -->
-	<div data-role="page" id="lastname">
+	<div data-role="page" id="lastname" data-theme="a">
 		
-		<header data-role="header" data-position="fixed" data-theme="b" data-id="dlastname">
+		<header data-role="header" data-position="fixed" data-id="dlastname">
 			<h1>Last Name</h1>
 				
 		</header>
@@ -82,27 +90,27 @@ MIU 1310
 		 						<li data-role="list-divider">Players by Last Name
 		 							<p class="ui-li-aside"> Contract Expires</p>
 		 						</li>
-		 						<li data-icon="grid"><a href="#lnadejo"><h3>Adejo</h3>
+		 						<li data-icon="forward" ><a href="#lnadejo"><h3>Adejo</h3>
 		 							<p style="font-weight:bold">Current Club:</p>
 		 							<p style="font-size:8"> Hertha Berlin</p>
 		 							<p class="ui-li-aside"> 10/10/2017</p></a>
 		 						</li>
-		 						<li data-icon="grid"><a href="#lnameobi"><h3>Ameobi</h3>
+		 						<li data-icon="forward" ><a href="#lnameobi"><h3>Ameobi</h3>
 		 							<p style="font-weight:bold">Current Club:</p>
 		 							<p style="font-size:8"> Newcastle FC</p>
 		 							<p class="ui-li-aside"> 01/27/2015</p></a>
 		 						</li>
-		 						<li data-icon="grid"><a href="#lnmusa"><h3>Musa</h3>
+		 						<li data-icon="forward" ><a href="#lnmusa"><h3>Musa</h3>
 		 							<p style="font-weight:bold">Current Club:</p>
 		 							<p style="font-size:8"> Hull City</p>
 		 							<p class="ui-li-aside"> 12/11/2013</p></a>
 		 						</li>
-		 						<li data-icon="grid"><a href="#lnobi"><h3>Obi</h3>
+		 						<li data-icon="forward" ><a href="#lnobi"><h3>Obi</h3>
 		 							<p style="font-weight:bold">Current Club:</p>
 		 							<p style="font-size:8"> Chelsea FC</p>
 		 							<p class="ui-li-aside"> 05/10/2015</p></a>
 		 						</li>
-		 						<li data-icon="grid"><a href="#lnutaka"><h3>Utaka</h3>
+		 						<li data-icon="forward" ><a href="#lnutaka"><h3>Utaka</h3>
 		 							<p style="font-weight:bold">Current Club:</p>
 		 							<p style="font-size:8"> Anzhi</p>
 		 							<p class="ui-li-aside"> 09/18/2016</p></a>
@@ -115,34 +123,31 @@ MIU 1310
 		 	<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
-						<li><a href="#info" data-icon="info">info</a></li>
-						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+						<li><a href="#info" data-icon="info" >info</a></li>
+						<li><a href="#stream" data-icon="gear" >News Stream</a></li>
 					</ul>
 			</div>
 		</footer>
 
 	</div> 
+	
+	
 <!-- firstname 1stLevelPg jquery -->
-	<div data-role="page" id="firstname">
+	<div data-role="page" id="firstname" data-theme="a">
 		
-		<header data-role="header" data-position="fixed" data-id="dfirstname">
-			<div class="ui-grid-b">
-				<div class="ui-block-a"></div>
-				<div class="ui-block-b"><br>Goladore</div>
-				<div class="ui-block-c"><a href="file:add_itemJq.html" data-role="button"  data-theme="b">Add Player</a></div>
-			</div>
+		<header data-role="header" data-position="fixed" data-id="dlastname">
+			<h1>First Name</h1>
+				
 		</header>
-		<div data-theme="b">
-			<img src="goladore_03.png" />
-		</div>
+	
 		<div data-role="content">
 			 <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Enter Search Here">
 		 		<li data-role="list-divider">Players by First Name</li>
-		 		<li data-icon="back"><a href="#home">Ahmed</a></li>
-		 		<li data-icon="back"><a href="#home">John</a></li>
-		 		<li data-icon="back"><a href="#home">Mark</a></li>
-		 		<li data-icon="back"><a href="#home">Mikel</a></li>
-		 		<li data-icon="back"><a href="#home">Shola</a></li>
+		 		<li data-icon="back" ><a href="#home">Ahmed</a></li>
+		 		<li data-icon="back" ><a href="#home">John</a></li>
+		 		<li data-icon="back" ><a href="#home">Mark</a></li>
+		 		<li data-icon="back" ><a href="#home">Mikel</a></li>
+		 		<li data-icon="back" ><a href="#home">Shola</a></li>
 			 </ul>
 		 	
 		</div>
@@ -151,26 +156,21 @@ MIU 1310
 		 	<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
-						<li><a href="#info" data-icon="info">info</a></li>
-						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+						<li><a href="#info" data-icon="info" >info</a></li>
+						<li><a href="#stream" data-icon="gear" >News Stream</a></li>
 					</ul>
 			</div>
 		</footer>
 
 	</div>
 <!-- age grade 1stLevelPg jquery -->
-<div data-role="page" id="agedivi">
+<div data-role="page" id="agedivi" data-theme="a">
 		
-		<header data-role="header" data-position="fixed" data-id="dagedivi">
-			<div class="ui-grid-b">
-				<div class="ui-block-a"></div>
-				<div class="ui-block-b"><br>Goladore</div>
-				<div class="ui-block-c"><a href="file:add_itemJq.html" data-role="button"  data-theme="b">Add Player</a></div>
-			</div>
-		</header>
-		<div data-theme="b">
-			<img src="goladore_03.png" />
-		</div>
+				<header data-role="header" data-position="fixed" data-id="dlastname">
+					<h1>Age Grade</h1>
+				
+				</header>
+		
 	
 	<!--Thumbnails and text -->	
 	
@@ -212,32 +212,27 @@ MIU 1310
 		 	<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
-						<li><a href="#info" data-icon="info">info</a></li>
-						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+						<li><a href="#info" data-icon="info" >info</a></li>
+						<li><a href="#stream" data-icon="gear" >News Stream</a></li>
 					</ul>
 			</div>
 		</footer>
 
 	</div>
 	<!-- field position 1stLevelPg jquery -->
-	<div data-role="page" id="fieldpos">
+	<div data-role="page" id="fieldpos" data-theme="a">
 		
-		<header data-role="header" data-position="fixed" data-id="dfieldpos">
-			<div class="ui-grid-b">
-				<div class="ui-block-a"></div>
-				<div class="ui-block-b"><br>Goladore</div>
-				<div class="ui-block-c"><a href="file:add_itemJq.html" data-role="button"  data-theme="b">Add Player</a></div>
-			</div>
-		</header>
-		<div data-theme="b">
-			<img src="goladore_03.png" />
-		</div>
+				<header data-role="header" data-position="fixed" data-id="dlastname">
+					<h1>Field Position</h1>
+				
+				</header>
+		
 		<div data-role="content">
 			 <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Enter Search Here">
 		 		<li data-role="list-divider">Players by Field Position</li>
-		 		<li data-icon="back"><a href="#home">Forward</a></li>
-		 		<li data-icon="back"><a href="#home">Midfield</a></li>
-		 		<li data-icon="back"><a href="#home">Defense</a></li>
+		 		<li data-icon="back" ><a href="#home">Forward</a></li>
+		 		<li data-icon="back" ><a href="#home">Midfield</a></li>
+		 		<li data-icon="back" ><a href="#home">Defense</a></li>
 		 		
 			 </ul>
 		 	
@@ -247,32 +242,27 @@ MIU 1310
 		 	<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
-						<li><a href="#info" data-icon="info">info</a></li>
-						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+						<li><a href="#info" data-icon="info" >info</a></li>
+						<li><a href="#stream" data-icon="gear" >News Stream</a></li>
 					</ul>
 			</div>
 		</footer>
 
 	</div>
 	<!-- rating 1stLevelPg jquery -->
-	<div data-role="page" id="performance">
+	<div data-role="page" id="performance" data-theme="a">
 		
-		<header data-role="header" data-position="fixed" data-id="drating">
-			<div class="ui-grid-b">
-				<div class="ui-block-a"></div>
-				<div class="ui-block-b"><br>Goladore</div>
-				<div class="ui-block-c"><a href="file:add_itemJq.html" data-role="button"  data-theme="b">Add Player</a></div>
-			</div>
-		</header>
-		<div data-theme="b">
-			<img src="goladore_03.png" />
-		</div>
+				<header data-role="header" data-position="fixed" data-id="dlastname">
+					<h1>Rating</h1>
+				
+				</header>
+		
 		<div data-role="content">
 			 <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Enter Search Here">
 		 		<li data-role="list-divider">Players by Rating</li>
-		 		<li data-icon="back"><a href="#home">0-3</a></li>
-		 		<li data-icon="back"><a href="#home">4-7</a></li>
-		 		<li data-icon="back"><a href="#home">8-10</a></li>
+		 		<li data-icon="back" ><a href="#home">0-3</a></li>
+		 		<li data-icon="back" ><a href="#home">4-7</a></li>
+		 		<li data-icon="back" ><a href="#home">8-10</a></li>
 		 		
 			 </ul>
 		 	
@@ -282,8 +272,8 @@ MIU 1310
 		 	<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
-						<li><a href="#info" data-icon="info">info</a></li>
-						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+						<li><a href="#info" data-icon="info" >info</a></li>
+						<li><a href="#stream" data-icon="gear" >News Stream</a></li>
 					</ul>
 			</div>
 		</footer>
@@ -292,7 +282,7 @@ MIU 1310
 	<!-- 2nd Level Pages -->
 	
 	<!-- Adejo club history emblems jquery -->
-	<div data-role="page" id="lnadejo">
+	<div data-role="page" id="lnadejo" data-theme="a">
 		
 		<header data-role="header" data-position="fixed" data-id="chadejo">
 			<h3>Club History (Adejo)</h3>
@@ -311,9 +301,9 @@ MIU 1310
 		<footer data-role="footer" data-position="fixed" data-id="chadejo">
 		 	<div data-role="navbar">
 					<ul>
-						<li><a href="#home" data-icon="home">Home</a></li>
-						<li><a href="#info" data-icon="info">info</a></li>
-						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+						<li><a href="#home" data-icon="home" >Home</a></li>
+						<li><a href="#info" data-icon="info" >info</a></li>
+						<li><a href="#stream" data-icon="gear" >News Stream</a></li>
 					</ul>
 			</div>
 		</footer>
@@ -321,7 +311,7 @@ MIU 1310
 	</div>
 	
 	<!-- Ameobi club history emblems jquery -->
-	<div data-role="page" id="lnameobi">
+	<div data-role="page" id="lnameobi" data-theme="a">
 		
 		<header data-role="header" data-position="fixed" data-id="chameobi">
 			<h3>Club History (Ameobi)</h3>
@@ -340,8 +330,8 @@ MIU 1310
 		 	<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
-						<li><a href="#info" data-icon="info">info</a></li>
-						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+						<li><a href="#info" data-icon="info" >info</a></li>
+						<li><a href="#stream" data-icon="gear" >News Stream</a></li>
 					</ul>
 			</div>
 		</footer>
@@ -349,7 +339,7 @@ MIU 1310
 	</div>
 	
 		<!-- Musa club history emblems jquery -->
-	<div data-role="page" id="lnmusa">
+	<div data-role="page" id="lnmusa" data-theme="a">
 		
 		<header data-role="header" data-position="fixed" data-id="chmusa">
 			<h3>Club History (Musa)</h3>
@@ -368,8 +358,8 @@ MIU 1310
 		 	<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
-						<li><a href="#info" data-icon="info">info</a></li>
-						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+						<li><a href="#info" data-icon="info" >info</a></li>
+						<li><a href="#stream" data-icon="gear" >News Stream</a></li>
 					</ul>
 			</div>
 		</footer>
@@ -377,7 +367,7 @@ MIU 1310
 	</div>
 	
 		<!-- Obi club history emblems jquery -->
-	<div data-role="page" id="lnobi">
+	<div data-role="page" id="lnobi" data-theme="a">
 		
 		<header data-role="header" data-position="fixed" data-id="chobi">
 			<h3>Club History (Obi)</h3>
@@ -396,8 +386,8 @@ MIU 1310
 		 	<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
-						<li><a href="#info" data-icon="info">info</a></li>
-						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+						<li><a href="#info" data-icon="info" >info</a></li>
+						<li><a href="#stream" data-icon="gear" >News Stream</a></li>
 					</ul>
 			</div>
 		</footer>
@@ -405,7 +395,7 @@ MIU 1310
 	</div>
 	
 		<!-- Utaka club history emblems jquery -->
-	<div data-role="page" id="lnutaka">
+	<div data-role="page" id="lnutaka" data-theme="a">
 		
 		<header data-role="header" data-position="fixed" data-id="chutaka">
 			<h3>Club History (Utaka)</h3>
@@ -424,8 +414,8 @@ MIU 1310
 		 	<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
-						<li><a href="#info" data-icon="info">info</a></li>
-						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+						<li><a href="#info" data-icon="info" >info</a></li>
+						<li><a href="#stream" data-icon="gear" >News Stream</a></li>
 					</ul>
 			</div>
 		</footer>
@@ -434,27 +424,22 @@ MIU 1310
 	
 	
 	<!-- info Section -->
-	<div data-role="page" id="info">
+	<div data-role="page" id="info" data-theme="a">
 		
-		<header data-role="header" data-position="fixed" data-id="dinfo">
-			<div class="ui-grid-b">
-				<div class="ui-block-a"></div>
-				<div class="ui-block-b"><br>Information</div>
-				<div class="ui-block-c"><a href="file:add_itemJq.html" data-role="button"  data-theme="b">Add Player</a></div>
-			</div>
+		<header data-role="header" data-position="fixed" data-id="dstream">
+			<h1>Information</h1>
+				
 		</header>
-		<div data-theme="b">
-			<img src="goladore_03.png" />
-		</div>
+		
 		<!-- -->
 		<div data-role="content">
 			 <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Enter Search Here">
 		 		<li data-role="list-divider">Information Categories:</li>
-		 		<li><a href="#credits">Credits</a></li>
-		 		<li><a href="#about">About Me</a></li>
-		 		<li><a href="../efevberha_ejiroghene_deliverable3_BronzeApp_MIU1310/index.html"> Bronze App</a></li>
-		 		<li><a href="https://github.com/b62612/MIU/tree/gh-pages/efevberha_ejiroghene_deliverable3_GoldApp_MIU1310" >Gold gh-pages</a></li>
-				<li><a href="https://github.com/b62612/MIU/tree/gh-pages/efevberha_ejiroghene_deliverable3_BronzeApp_MIU1310" >Bronze gh-pages</a></li>
+		 		<li><a href="#credits" data-icon="forward" >Credits</a></li>
+		 		<li><a href="#about" data-icon="forward" >About Me</a></li>
+		 		<li><a href="../efevberha_ejiroghene_deliverable3_BronzeApp_MIU1310/index.html"  data-icon="forward" > Bronze App</a></li>
+		 		<li><a href="https://github.com/b62612/MIU/tree/gh-pages/efevberha_ejiroghene_deliverable3_GoldApp_MIU1310"  data-icon="forward" >Gold gh-pages</a></li>
+				<li><a href="https://github.com/b62612/MIU/tree/gh-pages/efevberha_ejiroghene_deliverable3_BronzeApp_MIU1310"  data-icon="forward" >Bronze gh-pages</a></li>
 			 </ul>
 		 	
 		</div>
@@ -463,7 +448,7 @@ MIU 1310
 					<ul>
 						<li><a href="#home" data-icon="home" >Home</a></li>
 						<li><a href="#info" data-icon="info" class="ui-btn-active">Info</a></li>
-						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+						<li><a href="#stream" data-icon="gear" >News Stream</a></li>
 					</ul>
 			</div>
 		</footer>
@@ -476,9 +461,9 @@ MIU 1310
 		
 		
 <!-- Credits 1stLevelPg jquery  -->
-	<div data-role="page" id="credits">
+	<div data-role="page" id="credits" data-theme="a">
 		
-		<header data-role="header" data-position="fixed" data-theme="b" data-id="dcredits">
+		<header data-role="header" data-position="fixed" data-id="dcredits">
 			<h1>Credits</h1>
 				
 		</header>
@@ -491,7 +476,7 @@ MIU 1310
 		 						<li data-role="list-divider">Logos used
 		 							
 		 						</li>
-		 						<li data-icon="grid"><a href="#lnadejo"><h3>Chris Creamer</h3>
+		 						<li data-icon="home" ><a href="#lnadejo"><h3>Chris Creamer</h3>
 		 							<p style="font-weight:bold">Logo owner</p>
 		 							sportslogos.net
 		 							<p class="ui-li-aside"> Est.1997 </p></a>
@@ -505,9 +490,9 @@ MIU 1310
 		<footer data-role="footer" data-position="fixed" data-id="dcredits">
 		 	<div data-role="navbar">
 					<ul>
-						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#home" data-icon="home" >Home</a></li>
 						<li><a href="#info" data-icon="info" class="ui-btn-active">info</a></li>
-						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+						<li><a href="#stream" data-icon="gear" >News Stream</a></li>
 					</ul>
 			</div>
 		</footer>
@@ -515,9 +500,9 @@ MIU 1310
 	</div> 
 	
 	<!-- About Me 1stLevelPg jquery  -->
-	<div data-role="page" id="about">
+	<div data-role="page" id="about" data-theme="a">
 		
-		<header data-role="header" data-position="fixed" data-theme="b" data-id="dabout">
+		<header data-role="header" data-position="fixed" data-id="dabout">
 			<h1>About Me</h1>
 				
 		</header>
@@ -530,7 +515,7 @@ MIU 1310
 		 						<li data-role="list-divider">Profile
 		 							
 		 						</li>
-		 						<li data-icon="grid"><a href="#lnadejo"><h3>Name: Ejay</h3>
+		 						<li data-icon="home" ><a href="#lnadejo"><h3>Name: Ejay</h3>
 		 							<p style="font-weight:bold">Hobby: Music Production</p>
 		 							Full Name: Ejiroghene B. Efevberha 
 		 							<p class="ui-li-aside"> MBDS BSc. </p></a>
@@ -545,29 +530,26 @@ MIU 1310
 		 	<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home" >Home</a></li>
-						<li><a href="#info" data-icon="info"class="ui-btn-active">info</a></li>
-						<li><a href="#stream" data-icon="gear">News Stream</a></li>
+						<li><a href="#info" data-icon="info" class="ui-btn-active">info</a></li>
+						<li><a href="#stream" data-icon="gear" >News Stream</a></li>
 					</ul>
 			</div>
 		</footer>
 
 	</div> 
-		 		
+	 		
 		 		
 
 		
 	<!-- NewsStream Page -->	
-	<div data-role="page" id="stream">
-		add_item.html
+	<div data-role="page" id="stream" data-theme="a">
+		
 		<header data-role="header" data-position="fixed" data-id="dstream">
-			<div class="ui-grid-b">
-				<div class="ui-block-a"></div>
-				<div class="ui-block-b"><br>Information</div>
-				<div class="ui-block-c"><a href="file:add_itemJq.html" data-role="button"  data-theme="b">Add Player</a></div>
-			</div>
+			<h1>News Stream</h1>
+				
 		</header>
 	
-		<content data-role="content">
+		<div data-role="content">
 		
 			
 									
@@ -579,39 +561,41 @@ MIU 1310
 		 										<li data-role="list-divider">Special Player Notes
 		 										<p class="ui-li-aside"> Discovery Date</p>
 		 										</li>
-		 											<li data-icon="grid"><a href="#lnadejo"><h3>Adejo</h3>
+		 											<li data-icon="home" ><a href="#lnadejo"><h3>Adejo</h3>
 		 												<p style="font-weight:bold">Defense</p>
 		 												<p style="font-size:8"> Still waiting for an international call-up.n</p>
 		 												<p data-date="07/01/2013" class="ui-li-aside dDate"> 07/01/2013</p></a>
 		 											</li>
-		 											<li data-icon="grid"><a href="#lnameobi"><h3>Ameobi</h3>
+		 											<li data-icon="home" ><a href="#lnameobi"><h3>Ameobi</h3>
 		 												<p style="font-weight:bold">Midfield</p>
 		 												<p style="font-size:8"> A super substitute for the Super Eagles</p>
 		 												<p data-date="07/27/1999" class="ui-li-aside dDate"> 07/27/1999</p></a>
 		 											</li>
-		 											<li data-icon="grid"><a href="#lnmusa"><h3>Musa</h3>
+		 											<li data-icon="home" ><a href="#lnmusa"><h3>Musa</h3>
 		 												<p style="font-weight:bold">Forward</p>
 		 												<p style="font-size:8"> Very fast winger</p>
 		 												<p data-date="02/23/2013" class="ui-li-aside dDate"> 02/23/2013</p></a>
 		 											</li>
-		 											<li data-icon="grid"><a href="#lnobi"><h3>Obi</h3>
+		 											<li data-icon="home" ><a href="#lnobi"><h3>Obi</h3>
 		 												<p style="font-weight:bold">Midfield</p>
 		 												<p style="font-size:8"> Plays an unnatural Defensive role at Chelsea</p>
 		 												<p data-date="07/13/2007" class="ui-li-aside dDate"> 07/13/2007</p></a>
 		 											</li>
-		 											<li data-icon="grid"><a href="#lnutaka"><h3>Utaka</h3>
+		 											<li data-icon="home" ><a href="#lnutaka"><h3>Utaka</h3>
 		 												<p style="font-weight:bold">Forward</p>
 		 												<p style="font-size:8"> France has been his most successful sojourn</p>
 		 												<p data-date="04/11/2013" class="ui-li-aside dDate"> 04/11/2013</p></a>
 		 											</li>
 		 										<li>
 		 								</ul>
-		 </content>
+		 </div>
+		 
+
 		 						<footer data-role="footer" data-position="fixed" data-id="dstream">
 		 							<nav data-role="navbar">
 		 								<ul>
-											<li><a href="#home" data-icon="home" >Home</a></li>
-											<li><a href="#info" data-icon="info">Info</a></li>
+											<li id="ddhome"><a href="#home" data-icon="home" >Home</a></li>
+											<li id="ddinfo"><a href="#info" data-icon="info" >Info</a></li>
 											<li><a href="#stream" data-icon="gear" class="ui-btn-active">News Stream</a></li>
 										</ul>
 									</nav>
@@ -628,7 +612,8 @@ MIU 1310
 	
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
-	<script type="text/javascript" src="js/null.js"></script>
+	
+	<script type="text/javascript" src="js/jquery.cookies.js"></script>
 
 </body>
 </html>
